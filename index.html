@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFÓRMATE S.I.L - Fe y Alegría Ecuador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- VIDEO BACKGROUND CONTAINER -->
+    <div class="video-background-container">
+        <video class="video-background" id="bgVideo" playsinline muted>
+            <source src="IMAGENES/cielo.mp4" type="video/mp4">
+        </video>
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- NAVBAR HEADER -->
+    <header class="navbar">
+        <nav class="navbar-container">
+            <div class="logo">
+                <img src="https://www.creacomunicaciones.com/wp-content/uploads/2011/02/FyA.png" alt="Logo FyA" class="logo-img">
+                <span>INFÓRMATE S.I.L</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link home" onclick="mostrar('inicio'); return false;">INICIO</a></li>
+                <li><a href="#colegio" class="nav-link" onclick="mostrar('colegio'); return false;">COLEGIO</a></li>
+                <li><a href="#autoridades" class="nav-link" onclick="mostrar('autoridades'); return false;">AUTORIDADES</a></li>
+                <li><a href="#docentes" class="nav-link" onclick="mostrar('docentes'); return false;">DOCENTES</a></li>
+                <li><a href="#cefa" class="nav-link" onclick="mostrar('cefa'); return false;">CEFA</a></li>
+                <li><a href="#infra" class="nav-link" onclick="mostrar('infra'); return false;">INFRAESTRUCTURA</a></li>
+            </ul>
+            <button class="cta-button" onclick="mostrar('colegio')">Explorar</button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-section activa">
+        <div class="hero-content">
+            <h1 class="hero-headline">
+                INFÓRMATE <span class="italic-word">S.I.L</span>
+            </h1>
+            <p class="hero-description">
+                Descubre información sobre nuestra institución de educación popular integral. Fe y Alegría Ecuador - Transformando vidas a través de la educación de calidad y valores transformadores.
+            </p>
+            <button class="hero-cta" onclick="mostrar('colegio')">Explorar Más</button>
+        </div>
+    </section>
+
+    <!-- SECCION COLEGIO -->
+    <section id="colegio" class="seccion">
+        <div class="container">
+            <h2 class="section-title">Nuestro Colegio</h2>
+            <div class="historia-grid">
+                <div class="historia-images">
+                    <div class="image-carousel">
+                        <div class="carousel-item active">
+                            <img src="IMAGENES/jose_maria_velaz.png" alt="José María Vélaz">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMAGENES/historia_aula.jpeg" alt="Aula">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMAGENES/chicos_fe.png" alt="Nacimiento de Fe y Alegría">
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" onclick="cambiarImagen(0)"></button>
+                        <button class="carousel-btn" onclick="cambiarImagen(1)"></button>
+                        <button class="carousel-btn" onclick="cambiarImagen(2)"></button>
+                    </div>
+                </div>
+                <div class="historia-content">
+                    <div class="content-card">
+                        <h3>Historia</h3>
+                        <p>Fe y Alegría es un movimiento internacional de educación popular que nació en Venezuela en 1955 gracias al padre José María Vélaz. En Ecuador, este movimiento fue fundado oficialmente el 29 de junio de 1964 con el objetivo de brindar educación a niños, niñas y jóvenes de sectores vulnerables y con menos oportunidades. Actualmente, Fe y Alegría tiene presencia en varias provincias del país, ofreciendo educación de calidad, inclusión y formación en valores para miles de estudiantes.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Misión</h3>
+                        <p>Fe y Alegría Ecuador es un movimiento de educación popular integral, promoción social y acción pública que, partiendo de los diversos contextos de comunidades y personas excluidas y empobrecidas del país, contribuye a la transformación social mediante una propuesta educativa de calidad, innovadora y participativa, inspirada en valores humanos, derechos y espiritualidad transformadora.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Visión</h3>
+                        <p>Fe y Alegría sueña con un Ecuador donde todas las personas tengan las mismas oportunidades para una vida digna, promoviendo una educación inclusiva, comprometida con el cuidado de las personas, la justicia social y la atención a los sectores con mayor exclusión.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION AUTORIDADES -->
+    <section id="autoridades" class="seccion">
+        <div class="container">
+            <h2 class="section-title">Autoridades</h2>
+            <p class="section-description">Conoce al equipo directivo que lidera nuestra institución con compromiso y visión educativa transformadora.</p>
+            
+            <div class="cards-grid">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="IMAGENES/rectora.jpeg" alt="Rector">
+                            <h3>Mgtr.Veronica Navarrete-RECTORA</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="back-content">
+                                <h4>Responsabilidades</h4>
+                                <p>Lidera la institución con visión y compromiso hacia la excelencia educativa, la transformación social y el cumplimiento de la misión institucional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="IMAGENES/lic.FAUSTO.jpeg  " alt="Vicerrector">
+                            <h3>Mgtr.Fausto Sarchi-VICERRECTOR</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="back-content">
+                                <h4>Responsabilidades</h4>
+                                <p>Apoya la gestión académica y administrativa, asegurando el cumplimiento de estándares de calidad y facilitando procesos educativos innovadores. Especialidad en Soporte Tecnico, Diseño y Desarollo Web.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="IMAGENES/Inspectora.jpeg" alt="Inspector">
+                            <h3>Lic.Sara Jacome-INSPECTORA</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="back-content">
+                                <h4>Responsabilidades</h4>
+                                <p>Vela por el cumplimiento de normas, disciplina estudiantil, bienestar integral de la comunidad educativa y convivencia armónica. Especialidad en Aplicaciones ofimaticas locales y en linea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="autoridades-info">
+                <div class="info-box">
+                    <h3><i class="fas fa-users"></i> Equipo de Gestión</h3>
+                    <p>Nuestro equipo directivo cuenta con profesionales altamente capacitados en educación, gestión administrativa y liderazgo transformacional. Trabajamos en conjunto para garantizar una educación de calidad integral.</p>
+                </div>
+                <div class="info-box">
+                    <h3><i class="fas fa-target"></i> Objetivos</h3>
+                    <p>Promover espacios de reflexión pedagógica, fortalecer la calidad educativa, impulsar la inclusión social y desarrollar en nuestros estudiantes competencias para la vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DOCENTES -->
+    <section id="docentes" class="seccion">
+        <div class="container">
+            <h2 class="section-title">Plantel Docente</h2>
+            <p class="section-description">Contamos con un equipo de educadores comprometidos y altamente capacitados.</p>
+            
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.BOLAÑOS.jpg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mgtr.Diego Bolaños</h3>
+                    <p>Especialista en Educación Historia;Acompañamiento integral en el aula;Emprendimiento y Gestion</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.PAULINA.jpg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mgtr.Paulina Ramon</h3>
+                    <p>Especialista en Educacion Fisica</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.MAIWA.jpg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mgtr.Anthony Maigua</h3>
+                    <p>Especialista en Lengua y Literatura</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.MILTON.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Lic.Milton Unda</h3>
+                    <p>Especialista en Programacion y Sistemas Operativos</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.OMAR.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mgtr.Omar Gordón</h3>
+                    <p>Especialista en Matemáticas y Emprendimiento</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.ROMINA.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mgtr.Romina López</h3>
+                    <p>Especialista en Cencias Naturales, Biologia y Química</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.MABEL.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mgtr.Mabel Cruz</h3>
+                    <p>Especialista en Lengua y Literatura</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.EDGAR.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mgtr.Edgar Rosero</h3>
+                    <p>Especialista en Física y Matemáticas</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/lic.ALISSON.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mgtr.Alisson Largo</h3>
+                    <p>Especialista en Ingles</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/SECRETARIA.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Secretaria-Elizabeth Galarza</h3>
+                    <p>Realizar tareas e informes acerca del colegio</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/PSICOLOGA.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Psicologa-Alexandra Endara</h3>
+                    <p>Mantener el bienestar mental de cada estudiante</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="IMAGENES/CONSERJE.jpeg" alt="Docente">
+                        <div class="teacher-overlay">
+                            <div class="teacher-socials">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Conserje-Anthonio Andino</h3>
+                    <p>Cuidado y limpieza del colegio para que siempre este presentable, limpio y bonito</p>
+                </div>
+            </div>
+
+            
+            <div class="teachers-stats">
+                <div class="stat-box">
+                    <h4>+10</h4>
+                    <p>Docentes Capacitados</p>
+                </div>
+                <div class="stat-box">
+                    <h4>100%</h4>
+                    <p>Licenciados en Educación</p>
+                </div>
+                <div class="stat-box">
+                    <h4>+200</h4>
+                    <p>Estudiantes Impactados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CEFA -->
+    <section id="cefa" class="seccion">
+        <div class="container">
+            <h2 class="section-title">CEFA</h2>
+            <p class="section-description">Un movimiento de liderazgo juvenil comprometido con la transformación social y el desarrollo integral de nuestros jóvenes.</p>
+
+            <div class="cefa-hero">
+                <img src="IMAGENES/movimiento_cefa.jpeg" alt="CEFA Movimiento" class="cefa-hero-image">
+                <div class="cefa-hero-content">
+                    <h3>¿Qué es CEFA?</h3>
+                    <p>CEFA es un movimiento de liderazgo juvenil que forma parte de Fe y Alegría, dedicado a promover el desarrollo integral de jóvenes mediante la participación comunitaria, el liderazgo transformador y la acción social. Buscamos formar ciudadanos comprometidos con la justicia social y el bienestar de sus comunidades.</p>
+                </div>
+            </div>
+
+            <div class="cefa-content">
+                <div class="cefa-section">
+                    <h3><i class="fas fa-quote-left"></i> Decálogo del Cefista</h3>
+                    <div class="decalogo-grid">
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">1</span>
+                            <p>El Cefista es dueño de confiar en su juventud.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">2</span>
+                            <p>El Cefista es honesto y leal con todos, conoce y ama su Movimiento.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">3</span>
+                            <p>El Cefista es organizado y comprometido hasta el final.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">4</span>
+                            <p>El Cefista es trabajador y austero.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">5</span>
+                            <p>El Cefista respeta y ama la naturaleza y la hace visible como casa de Dios.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">6</span>
+                            <p>El Cefista es constructor de sí mismo y afronta con optimismo las dificultades.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">7</span>
+                            <p>El Cefista se preocupa por su formación con responsabilidad y alegría.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">8</span>
+                            <p>El Cefista asume con sentido crítico los cambios del mundo y combate las injusticias.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">9</span>
+                            <p>El Cefista se crea con abrazo fraterno y solidario por los más pobres.</p>
+                        </div>
+                        <div class="decalogo-item">
+                            <span class="decalogo-number">10</span>
+                            <p>El Cefista es servidor de la comunidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cefa-section">
+                    <h3><i class="fas fa-praying-hands"></i> Oración del Cefista</h3>
+                    <div class="oracion-box">
+                        <p class="oracion-text">
+                            <span class="oracion-line"><strong>Padre Nuestro de la tierra</strong></span>
+                            <span class="oracion-line">Enséñanos a redescubrir</span>
+                            <span class="oracion-line">Tu presencia en la historia</span>
+                            <span class="oracion-line">y la fe nos llevamos dentro</span>
+                            <span class="oracion-line">para dar testimonio de tu presencia.</span>
+                        </p>
+                        <p class="oracion-text">
+                            <span class="oracion-line"><strong>Que tu Espíritu nos anime</strong></span>
+                            <span class="oracion-line">a dar lo mejor de nosotros,</span>
+                            <span class="oracion-line">a no temer nuestra responsabilidad de Celista.</span>
+                        </p>
+                        <p class="oracion-text">
+                            <span class="oracion-line"><strong>Danos fuerza para transformar</strong></span>
+                            <span class="oracion-line">cualquier realidad de injusticia.</span>
+                        </p>
+                        <p class="oracion-text">
+                            <span class="oracion-line"><strong>Ayúdanos por esta Ciudad de Loma</strong></span>
+                            <span class="oracion-line">sea un espacio de esperanza y compromiso</span>
+                            <span class="oracion-line">como sello José María Vélaz.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cefa-simbolos">
+                <h3 class="simbolos-title">Símbolos, Pañoletas y Cantos del CEFA</h3>
+                
+                <div class="simbolo-card">
+                    <div class="simbolo-header">
+                        <h4><i class="fas fa-flag"></i> Símbolo del CEFA</h4>
+                    </div>
+                    <div class="simbolo-content">
+                        <div class="simbolo-image">
+                            <img src="IMAGENES/bandera_cefa.JPG" alt="Bandera del CEFA">
+                        </div>
+                        <div class="simbolo-description">
+                            <p><strong>La Bandera:</strong> Color blanco como la Fe y Alegría y en el medio el logotipo del CEFA. Representa nuestro compromiso con los valores de Fe y Alegría en toda la institución.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pañoletas-section">
+                    <h4><i class="fas fa-palette"></i> Pañoletas del CEFA - Significado por Colores</h4>
+                    <div class="pañoletas-grid">
+                        <div class="pañoleta-card">
+                            <div class="pañoleta-color" style="background: #009933;">
+                                <span>INICIADOS</span>
+                            </div>
+                            <p class="pañoleta-meaning"><strong>Verde</strong> - Símbolo de nueva vida y esperanza</p>
+                        </div>
+                        <div class="pañoleta-card">
+                            <div class="pañoleta-color" style="background: #ff0000;">
+                                <span>ROJAS</span>
+                            </div>
+                            <p class="pañoleta-meaning"><strong>Rojo</strong> - Símbolo de compromiso y pasión</p>
+                        </div>
+                        <div class="pañoleta-card">
+                            <div class="pañoleta-color" style="background: #f7f700;">
+                                <span>AMARILLAS</span>
+                            </div>
+                            <p class="pañoleta-meaning"><strong>Amarillo</strong> - Símbolo de alegría y luz</p>
+                        </div>
+                        <div class="pañoleta-card">
+                            <div class="pañoleta-color" style="background: #000000;">
+                                <span>JEFES</span>
+                            </div>
+                            <p class="pañoleta-meaning"><strong>Negro con franja amarilla</strong> - Liderazgo responsable</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logotipo-section">
+                    <h4><i class="fas fa-medal"></i> Logotipo del CEFA</h4>
+                    <div class="logotipo-content">
+                        <div class="logotipo-image">
+                            <img src="IMAGENES/logotipo_cefa.jpg" alt="Logotipo CEFA">
+                        </div>
+                        <div class="logotipo-info">
+                            <p><strong>Ubicación:</strong> Debe ser ubicado al centro, a 7 cm de la punta de la pañoleta.</p>
+                            <p><strong>Dimensiones:</strong></p>
+                            <ul>
+                                <li>9.5 cm horizontal</li>
+                                <li>7.5 cm vertical</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cefa-valores">
+                <h3>Valores Fundamentales del CEFA</h3>
+                <div class="valores-grid">
+                    <div class="valor-card">
+                        <i class="fas fa-heart"></i>
+                        <h4>Amor</h4>
+                        <p>Amor a la vida, a la comunidad y al prójimo en todas nuestras acciones.</p>
+                    </div>
+                    <div class="valor-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Solidaridad</h4>
+                        <p>Compromiso con los más vulnerables y apoyo mutuo entre hermanos.</p>
+                    </div>
+                    <div class="valor-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Liderazgo</h4>
+                        <p>Formación de líderes transformadores con visión de cambio social.</p>
+                    </div>
+                    <div class="valor-card">
+                        <i class="fas fa-cross"></i>
+                        <h4>Fe</h4>
+                        <p>Fe en Dios y en la capacidad de transformar la realidad con esperanza.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cefa-actividades">
+                <h3>Actividades y Procesos del CEFA</h3>
+                <div class="actividades-list">
+                    <div class="actividad-item">
+                        <span class="actividad-icon"><i class="fas fa-check-circle"></i></span>
+                        <div class="actividad-content">
+                            <h4>Reuniones Comunitarias</h4>
+                            <p>Espacios de encuentro donde compartimos experiencias, reflexionamos y planificamos acciones de transformación social.</p>
+                        </div>
+                    </div>
+                    <div class="actividad-item">
+                        <span class="actividad-icon"><i class="fas fa-check-circle"></i></span>
+                        <div class="actividad-content">
+                            <h4>Formación y Capacitación</h4>
+                            <p>Procesos educativos continuos para el desarrollo de competencias de liderazgo y responsabilidad social.</p>
+                        </div>
+                    </div>
+                    <div class="actividad-item">
+                        <span class="actividad-icon"><i class="fas fa-check-circle"></i></span>
+                        <div class="actividad-content">
+                            <h4>Proyectos Comunitarios</h4>
+                            <p>Iniciativas que impactan positivamente en las comunidades y generan cambios significativos.</p>
+                        </div>
+                    </div>
+                    <div class="actividad-item">
+                        <span class="actividad-icon"><i class="fas fa-check-circle"></i></span>
+                        <div class="actividad-content">
+                            <h4>Campamentos y Retiros</h4>
+                            <p>Encuentros de convivencia, reflexión espiritual y fortalecimiento de vínculos fraternales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION INFRAESTRUCTURA -->
+    <section id="infra" class="seccion">
+        <div class="container">
+            <h2 class="section-title">Infraestructura</h2>
+            <p class="section-description">Contamos con instalaciones modernas y espacios diseñados para potenciar el aprendizaje integral de nuestros estudiantes.</p>
+            
+            <!-- INFRAESTRUCTURA TABS -->
+            <div class="infra-tabs-container">
+                <div class="infra-tabs-menu">
+                    <button class="infra-tab-btn active" onclick="mostrarInfraTab('laboratorios')">
+                        <i class="fas fa-flask-vial"></i> Laboratorios
+                    </button>
+                    <button class="infra-tab-btn" onclick="mostrarInfraTab('biblioteca')">
+                        <i class="fas fa-book"></i> Biblioteca
+                    <button class="infra-tab-btn" onclick="mostrarInfraTab('informatica')">
+                        <i class="fas fa-laptop"></i> Informática
+                    <button class="infra-tab-btn" onclick="mostrarInfraTab('soporte')">
+                        <i class="fas fa-screwdriver-wrench"></i> Soporte Tecnico
+                    </button>
+                    <button class="infra-tab-btn" onclick="mostrarInfraTab('areas-verdes')">
+                        <i class="fas fa-tree"></i> Áreas Verdes
+                    </button>
+                    <button class="infra-tab-btn" onclick="mostrarInfraTab('deportes')">
+                         <i class="fas fa-futbol"></i> Deportes
+                    </button>
+                </div>
+            </div>
+
+            <!-- TAB LABORATORIOS -->
+            <div id="laboratorios" class="infra-tab-content active">
+                <div class="infra-detail-container">
+                    <div class="infra-detail-images">
+                        <div class="infra-main-image">
+                            <img src="IMAGENES/LABORATORIO.jpeg" alt="LABORATORIO PRINCIPAL">
+                        </div>
+                        <div class="infra-secondary-images">
+                            <img src="IMAGENES/LABORATORIO2.jpeg" alt="Laboratorio Detalle">
+                            <img src="IMAGENES/LABORATORIO3.jpeg" alt="Laboratorio Equipos">
+                        </div>
+                    </div>
+                    <div class="infra-detail-content">
+                        <h3>Laboratorio Científico</h3>
+                        <p class="infra-intro">Espacio equipado con las herramientas adecuadas para estudiar a precision todo lo relacionado con la estructura humana, animal y vegetal.</p>
+                        
+                        <div class="infra-features-list">
+                            <h4>Características Principales:</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h5>Microscopios</h5>
+                                    <p>Captura de imágenes de alta resolución para un mejor analisis.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-beaker"></i>
+                                    <h5>Equipos de Análisis Químico</h5>
+                                    <p>Instrumental especializado para experimentos de química orgánica e inorgánica</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Material Completo</h5>
+                                    <p>Cristalería, reactivos y materiales de laboratorio siempre disponibles</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Asesoría Especializada</h5>
+                                    <p>Docentes capacitados que guían el uso correcto del equipo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="infra-stats-box">
+                            <div class="stat-item">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Laboratorio</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Equipos Modernos y nuevos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Funcional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB BIBLIOTECA -->
+            <div id="biblioteca" class="infra-tab-content">
+                <div class="infra-detail-container">
+                    <div class="infra-detail-images">
+                        <div class="infra-main-image">
+                            <img src="IMAGENES/BIBLIOTECA.jpeg" alt="Biblioteca">
+                        </div>
+                        <div class="infra-secondary-images">
+                            <img src="IMAGENES/BIBLIOTECA2.jpeg" alt="Estantería">
+                            <img src="IMAGENES/BIBLIOTECA3.jpeg" alt="Sala de Lectura">
+                        </div>
+                    </div>
+                    <div class="infra-detail-content">
+                        <h3>Biblioteca</h3>
+                        <p class="infra-intro">Centro de recursos educativos que promueve el hábito de la lectura y la investigación en un ambiente acogedor.</p>
+                        
+                        <div class="infra-features-list">
+                            <h4>Características Principales:</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h5>Coleccion de libros</h5>
+                                    <p>Amplia variedad de libros educativos y material de consulta para apoyar el aprendizaje de los estudiantes.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Espacio de lectura</h5>
+                                    <p>Área organizada con mesas y sillas destinada a la lectura, estudio e investigación</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Espacios Colaborativos</h5>
+                                    <p>Salas de estudio grupal con equipamiento multimedia</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Material educativo</h5>
+                                    <p>Recursos impresos que complementan las actividades académicas de los estudiantes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="infra-stats-box">
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Libros</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Plataformas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">7:00-13:00</span>
+                                <span class="stat-label">Abierta toda la jornada escolar.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB INFORMÁTICA -->
+            <div id="informatica" class="infra-tab-content">
+                <div class="infra-detail-container">
+                    <div class="infra-detail-images">
+                        <div class="infra-main-image">
+                            <img src="IMAGENES/INFORMATICA.jpeg" alt="Aula Informática">
+                        </div>
+                        <div class="infra-secondary-images">
+                            <img src="IMAGENES/INFORMATICA2.jpeg" alt="Computadoras">
+                            <img src="IMAGENES/INFORMATICA3.jpeg" alt="Servidores">
+                        </div>
+                    </div>
+                    <div class="infra-detail-content">
+                        <h3>Centro de Computación</h3>
+                        <p class="infra-intro">Aula equipada con computadoras funcionales y con internet en cada una de ellas.</p>
+                        
+                        <div class="infra-features-list">
+                            <h4>Características Principales:</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h5>25+ Computadoras</h5>
+                                    <p>Equipos funcionales y con sus perifericos necesarios para su uso.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Fibra Óptica</h5>
+                                    <p>Internet de alta velocidad para investigación y la realización de trabajos mas eficientes.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Software Educativo</h5>
+                                    <p>Programas profesionales para la programación.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Enseñansa eficaz</h5>
+                                    <p>Todos aprenden a usar programas a la vez.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="infra-stats-box">
+                            <div class="stat-item">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Aula</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">INTERNET</span>
+                                <span class="stat-label">Alta velocidad</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Disponibilidad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB Soporte Tecnico -->
+            <div id="soporte" class="infra-tab-content">
+                <div class="infra-detail-container">
+                    <div class="infra-detail-images">
+                        <div class="infra-main-image">
+                            <img src="IMAGENES/SOPORTE.jpeg" alt="Soporte">
+                        </div>
+                        <div class="infra-secondary-images">
+                            <img src="IMAGENES/SOPORTE2.jpeg" alt="Aula">
+                            <img src="IMAGENES/SOPORTE3.jpeg" alt="PCS">
+                        </div>
+                    </div>
+                    <div class="infra-detail-content">
+                        <h3>Centro de computadoras</h3>
+                        <p class="infra-intro">Enseñansa del ensamblaje en las computadoras</p>
+                        
+                        <div class="infra-features-list">
+                            <h4>Características Principales:</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h5>Computadoras</h5>
+                                    <p>Puedes manipularlas pero con cuidado</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>CPU</h5>
+                                    <p>Ver los componentes internos</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Componentes</h5>
+                                    <p>Observas y manipular con sus medidas antiestaticas</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Herramientas</h5>
+                                    <p>Materiales a usar para abrir el CPU</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="infra-stats-box">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Estudiantes van aprendiendo al dia los basico sobre la manipulacion</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Equipos y perifericos manipulables</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">99%</span>
+                                <span class="stat-label">Maniulables</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB ÁREAS VERDES -->
+            <div id="areas-verdes" class="infra-tab-content">
+                <div class="infra-detail-container">
+                    <div class="infra-detail-images">
+                        <div class="infra-main-image">
+                            <img src="IMAGENES/fogata-cefa.jpeg" alt="Áreas Verdes">
+                        </div>
+                        <div class="infra-secondary-images">
+                            <img src="IMAGENES/caseta.jpeg" alt="Parque">
+                            <img src="IMAGENES/bar.jpeg" alt="Descanso">
+                        </div>
+                    </div>
+                    <div class="infra-detail-content">
+                        <h3>Espacios Verdes y Recreativos</h3>
+                        <p class="infra-intro">Áreas naturales diseñadas para el esparcimiento, recreación y conexión con la naturaleza en un entorno seguro.</p>
+                        
+                        <div class="infra-features-list">
+                            <h4>Características Principales:</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h5>Zonas de descanso</h5>
+                                    <p>Lugares con asientos bajo la sombra y en un abmiente relajado rodeado de arboles.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Áreas de Convivencia</h5>
+                                    <p>Espacios para interacción social y actividades comunitarias</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Zonas Sombreadas</h5>
+                                    <p>Árboles y estructuras para descanso durante el recreo</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Huerto Educativo</h5>
+                                    <p>Espacio para aprendizaje en sostenibilidad y cultivo orgánico</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="infra-stats-box">
+                            <div class="stat-item">
+                                <span class="stat-number">ESPACIOS VERDES</span>
+                                <span class="stat-label">Por todo el colegio</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">150+</span>
+                                <span class="stat-label">Árboles</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Seguro y relajante</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB DEPORTES -->
+            <div id="deportes" class="infra-tab-content">
+                <div class="infra-detail-container">
+                    <div class="infra-detail-images">
+                        <div class="infra-main-image">
+                            <img src="IMAGENES/basket.jpeg" alt="Canchas">
+                        </div>
+                        <div class="infra-secondary-images">
+                            <img src="IMAGENES/indor.jpeg" alt="tribunas">
+                            <img src="IMAGENES/voley.jpeg" alt="voley">
+                            <img src="IMAGENES/tribuna.jpeg" alt="Cancha">
+                        </div>
+                    </div>
+                    <div class="infra-detail-content">
+                        <h3>Areas de deportes</h3>
+                        <p class="infra-intro">Contamos con diferentes canchas para diferentes deportes para que los estudiantes puedan divertirse</p>
+                        
+                        <div class="infra-features-list">
+                            <h4>Características Principales:</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <h5>Cancha de basket</h5>
+                                    <p>Zona donde se convina el futbol y el basket</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Cancha de indor</h5>
+                                    <p>Los mas pequeños pueden jugar tranquilamente en una cancha pequeña</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Cancha de voley</h5>
+                                    <p>Pueden organizar torneos entre estudiantes y profesores</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5>Cancha de futbol</h5>
+                                    <p>Area de una cancha de futbol grande con una tribuna para que puedan ver los partidos desde una zona con toda la visibilidad de la cancha</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="infra-stats-box">
+                            <div class="stat-item">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Canchas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Tribunas para observar</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Canchas cuidadas y listas para jugar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>INFORMATE S.I.L</h3>
+                    <p>Educación popular integral para la transformación social para los que no tengan conocimineto.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/fyaecuador?locale=es_LA"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/fyaecuador/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2026 INFÓRMATE S.I.L - Fe y Alegría Ecuador.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
